@@ -62,5 +62,5 @@
 
   - The address of the i-th element in an array can be computed as:
 
-    - $\text{base\_addr\_of\_the\_array} + i * \text{size\_of\_the\_data\_type}$ 
+    - $\text{BaseAddrOfTheArray} + i * \text{SizeOfTheDataType}$ 
     - 
