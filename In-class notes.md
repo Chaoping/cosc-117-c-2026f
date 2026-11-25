@@ -23,3 +23,44 @@
 - A header file provides function prototypes (the declaration, not the definition)
   - declaration specifies what the function takes as input (parameters), and what it returns (return type)
   - definition defines how the function runs
+
+- `printf()` function:
+
+  - `printf("hello %s\n", "Chaoping");`
+  - `printf("the sum is %d\n", total);`
+
+- Data Types:
+
+  - char
+  - int (boolean is also int, 0 for `False`, non-zero is `True`)
+  - long 
+  - float
+  - double
+
+- Reading user input:
+
+  - `scanf()` function: like `printf()` but the opposite direction
+
+    - ```c
+      int val;
+      scanf("%d", &val); // %d specifier says we expect user to enter a decimal integer
+      ```
+
+    - Note that we have `&` symbol. It is the *address-of* operator. `&val` is the address of the variable `val`
+
+  - `char getchar()` function: read a single character, then you need to process character by character
+
+- Arrays in C:
+
+  - Declare an array:
+
+  - ```
+    int a[5];
+    ```
+
+  - Data type and the size of the array must be known to the compiler.
+
+  - The address of the i-th element in an array can be computed as:
+
+    - $\text{BaseAddrOfTheArray} + i * \text{SizeOfTheDataType}$ 
+    - 
