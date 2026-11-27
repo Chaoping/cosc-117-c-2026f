@@ -4,7 +4,7 @@
   - Source code: the plain-text
   - Compiled program: binary (the machine language for the platform)
   - Compiler: a program that compiles the source code to binary program. Compilers are platform-specific. The most commonly used C compiler today is `gcc` (GNU C Compiler)
-  
+
 - A function in C (influenced other languages like Java, C++, C#, etc.):
   - the type of the function (the return type)
   - function name
@@ -23,7 +23,7 @@
   - compilation: converts high-level language source code to assembly
   - assembly: converts assembly language to machine code (0s and 1s) 
   - linking: combine all the compiled functions together to create the program
-  
+
 - A header file provides function prototypes (the declaration, not the definition)
   - declaration specifies what the function takes as input (parameters), and what it returns (return type)
   - definition defines how the function runs
@@ -67,7 +67,33 @@
   - Array elements are stored contiguously in memory
 
   - The address of the i-th element in an array can be computed as:
-  
+
     - $\text{BaseAddrOfTheArray} + i * \text{SizeOfTheDataType}$ 
-  
+
   - `a` (the array itself) is the base address, `a[0]` (the array with index) is the element 
+
+- Functions (methods):
+
+  - Function itself has a type (its return type)
+
+  - Functions may take parameters. Parameters have types.
+
+  - Function definition:
+    ```c
+    int add(int a, int b){
+    	int result;
+        result = a + b;
+        return result;
+    }
+    ```
+
+  - Calling a function:
+
+    - Pass by value always: arguments are evaluated, and the values are copied to the callee function's parameters. If an argument is an array, since array is the address, the address is copied to the parameter. The callee function can access the SAME array.
+    - When a function is called, memory for local variables (including parameters) is automatically allocated on the STACK. (Known as automatic memory)
+    - 
+
+
+
+
+
